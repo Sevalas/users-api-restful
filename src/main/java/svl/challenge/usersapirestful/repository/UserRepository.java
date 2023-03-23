@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestful.domain.repository;
+package svl.challenge.usersapirestful.repository;
 
 
 import jakarta.transaction.Transactional;

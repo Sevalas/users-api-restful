@@ -15,7 +15,7 @@ import svl.challenge.usersapirestful.domain.model.RequestValidateModel;
 import svl.challenge.usersapirestful.domain.model.ResponseModel;
 import svl.challenge.usersapirestful.domain.model.ResponseUserCreationModel;
 import svl.challenge.usersapirestful.domain.model.ResposeUserModel;
-import svl.challenge.usersapirestful.domain.repository.UserRepository;
+import svl.challenge.usersapirestful.repository.UserRepository;
 import svl.challenge.usersapirestful.security.JWTProvider;
 
 import java.util.ArrayList;

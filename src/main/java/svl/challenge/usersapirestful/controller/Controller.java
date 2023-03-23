@@ -82,7 +82,7 @@ public class Controller {
     }
 
     @GetMapping(value = "/validate/token")
-    public ResponseModel validateToken(@Valid @RequestBody RequestValidateModel validateModel) {
+        public ResponseModel validateToken(@Valid @RequestBody RequestValidateModel validateModel) {
         LOGGER.info("Executing Controller.validate");
         return userService.validateToken(validateModel);
     }

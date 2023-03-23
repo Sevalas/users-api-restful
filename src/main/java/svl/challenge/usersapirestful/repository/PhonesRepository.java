@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestful.domain.repository;
+package svl.challenge.usersapirestful.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import svl.challenge.usersapirestful.domain.entity.Phones;

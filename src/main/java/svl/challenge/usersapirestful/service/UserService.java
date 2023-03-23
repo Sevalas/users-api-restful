@@ -11,7 +11,7 @@ import svl.challenge.usersapirestful.domain.dto.TokenDto;
 import svl.challenge.usersapirestful.domain.entity.User;
 import svl.challenge.usersapirestful.domain.model.ResponseUserCreationModel;
 import svl.challenge.usersapirestful.domain.model.ResposeUserModel;
-import svl.challenge.usersapirestful.domain.repository.UserRepository;
+import svl.challenge.usersapirestful.repository.UserRepository;
 import svl.challenge.usersapirestful.mapper.UserMapper;
 import svl.challenge.usersapirestful.security.JWTProvider;
 
