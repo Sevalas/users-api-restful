@@ -20,6 +20,12 @@ Consola H2 User Name: zpiral
 
 JWT secret: my-32-character-ultra-secure-and-ultra-long-secret
 
+---
+Puedes probar este api desde mi colección publica de postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/13803094-95e04e55-719b-4d69-a169-087670b4de42?action=collection%2Ffork&collection-url=entityId%3D13803094-95e04e55-719b-4d69-a169-087670b4de42%26entityType%3Dcollection%26workspaceId%3Daf999cbc-3be6-446e-aab8-63b89f5d774f)
+
+Tambien puedes descargar el Json de la colección [Aqui](https://github.com/Sevalas/users-api-restful/raw/develop/user-api-restful.postman_collection.json "download")
 
 ---
 
@@ -34,7 +40,7 @@ Esta es una aplicación desarrollada con:
 - Validaciones con JWT
 - Swagger
 
-
+Descarga el diagrama de solución en [PDF](https://github.com/Sevalas/users-api-restful/raw/develop/diagrama-solucion.pdf "download") o [PNG](https://github.com/Sevalas/users-api-restful/raw/develop/diagrama-solucion.png "download")
 
 ## :black_circle: Para ayuda futura
 
