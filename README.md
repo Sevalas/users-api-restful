@@ -10,12 +10,11 @@ Soy Sebastian Valencia Lasprilla y esta es mi propuesta de API RESTful de creaci
 
 Demo: https://users-api-restful.onrender.com/swagger-ui/index.html (la inicialización la página puede tardar si la aplicación no se ha desplegado recientemente)
 
-Consola H2: https://users-api-restful.onrender.com/h2-console
-
-Consola H2 User Name: zpiral
+Link Consola H2: https://users-api-restful.onrender.com/h2-console
+H2 JDBC URL: jdbc:h2:mem:usersdb
+Credenciales Consola H2:
 | user | pass |
 | ------------------------- | :----------: |
-| Credenciales Consola H2: | |
 | zpiral | atomic |
 
 JWT secret: my-32-character-ultra-secure-and-ultra-long-secret
