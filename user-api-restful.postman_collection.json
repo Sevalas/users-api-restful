@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "95e04e55-719b-4d69-a169-087670b4de42",
+		"name": "Users Api Restful",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13803094"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/create",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/create",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Usuario Creado exitosamente\",\n    \"data\": {\n        \"id\": \"6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f\",\n        \"created\": \"2023-03-23T10:19:36.679+00:00\",\n        \"modified\": null,\n        \"last_login\": \"2023-03-23T10:19:36.679+00:00\",\n        \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGlAZ21haWwuY29tIiwiaWF0IjoxNjc5NTY2Nzc2LCJleHAiOjE2Nzk1NzAzNzZ9.AA1w_eVqQ8lfCNv1wJtdDPnIsM0dgi-nGrHG3s6Zc3CWAFJb3ovi5hrdxk7rwzcs\",\n        \"isactive\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getByMail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/get/email?email=jack.doli@gmail.com",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"get",
+						"email"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "jack.doli@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getByMail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/get/email?email=jack.doli@gmail.com",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"get",
+								"email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "jack.doli@gmail.com"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Usuario encontrado\",\n    \"data\": {\n        \"id\": \"6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f\",\n        \"name\": \"Jack Dolini\",\n        \"email\": \"jack.doli@gmail.com\",\n        \"phones\": [\n            {\n                \"number\": \"+9999999999\",\n                \"citycode\": \"33\",\n                \"contrycode\": \"58\"\n            }\n        ],\n        \"created\": \"2023-03-23T10:19:36.679+00:00\",\n        \"modified\": null,\n        \"last_login\": \"2023-03-23T10:19:36.679+00:00\",\n        \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGlAZ21haWwuY29tIiwiaWF0IjoxNjc5NTY2Nzc2LCJleHAiOjE2Nzk1NzAzNzZ9.AA1w_eVqQ8lfCNv1wJtdDPnIsM0dgi-nGrHG3s6Zc3CWAFJb3ovi5hrdxk7rwzcs\",\n        \"isactive\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/get/id?id=6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"get",
+						"id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/get/id?id=6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"get",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"mensaje\": \"Usuario encontrado\",\r\n    \"data\": {\r\n        \"id\": \"6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f\",\r\n        \"name\": \"Jack Dolini\",\r\n        \"email\": \"jack.doli@gmail.com\",\r\n        \"phones\": [\r\n            {\r\n                \"number\": \"+9999999999\",\r\n                \"citycode\": \"33\",\r\n                \"contrycode\": \"58\"\r\n            }\r\n        ],\r\n        \"created\": \"2023-03-23T10:19:36.679+00:00\",\r\n        \"modified\": null,\r\n        \"last_login\": \"2023-03-23T10:19:36.679+00:00\",\r\n        \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGlAZ21haWwuY29tIiwiaWF0IjoxNjc5NTY2Nzc2LCJleHAiOjE2Nzk1NzAzNzZ9.AA1w_eVqQ8lfCNv1wJtdDPnIsM0dgi-nGrHG3s6Zc3CWAFJb3ovi5hrdxk7rwzcs\",\r\n        \"isactive\": true\r\n    }\r\n}"
+				}
+			]
+		},
+		{
+			"name": "getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/get/all",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jack Dolini\",\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"33\",\r\n      \"contrycode\": \"58\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/get/all",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"get",
+								"all"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"mensaje\": \"Lista de usuarios\",\r\n    \"data\": [\r\n        {\r\n            \"id\": \"6b67a80c-bcb7-4b18-be1f-d6ac9a136e1f\",\r\n            \"name\": \"Jack Dolini\",\r\n            \"email\": \"jack.doli@gmail.com\",\r\n            \"phones\": [\r\n                {\r\n                    \"number\": \"+9999999999\",\r\n                    \"citycode\": \"33\",\r\n                    \"contrycode\": \"58\"\r\n                }\r\n            ],\r\n            \"created\": \"2023-03-23T10:19:36.679+00:00\",\r\n            \"modified\": null,\r\n            \"last_login\": \"2023-03-23T10:19:36.679+00:00\",\r\n            \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGlAZ21haWwuY29tIiwiaWF0IjoxNjc5NTY2Nzc2LCJleHAiOjE2Nzk1NzAzNzZ9.AA1w_eVqQ8lfCNv1wJtdDPnIsM0dgi-nGrHG3s6Zc3CWAFJb3ovi5hrdxk7rwzcs\",\r\n            \"isactive\": true\r\n        }\r\n    ]\r\n}"
+				}
+			]
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jack Dalini\",\r\n  \"email\": \"jack.dali2@gmail.com\",\r\n  \"password\": \"suIze&9999--\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"00\",\r\n      \"contrycode\": \"0\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/edit?currentEmail=jack.doli@gmail.com",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"edit"
+					],
+					"query": [
+						{
+							"key": "currentEmail",
+							"value": "jack.doli@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "edit",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jack Dalini\",\r\n  \"email\": \"jack.dali2@gmail.com\",\r\n  \"password\": \"suIze&9999--\",\r\n  \"phones\": [\r\n    {\r\n      \"number\": \"+9999999999\",\r\n      \"citycode\": \"00\",\r\n      \"contrycode\": \"0\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/edit?currentEmail=jack.doli@gmail.com",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "currentEmail",
+									"value": "jack.doli@gmail.com"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Usuario actualizado exitosamente\",\n    \"data\": {\n        \"id\": \"56e4c810-ba62-4499-818b-d044aca5f6d2\",\n        \"name\": \"Jack Dalini\",\n        \"email\": \"jack.dali2@gmail.com\",\n        \"phones\": [\n            {\n                \"number\": \"+9999999999\",\n                \"citycode\": \"00\",\n                \"contrycode\": \"0\"\n            }\n        ],\n        \"created\": \"2023-03-23T10:31:25.154+00:00\",\n        \"modified\": \"2023-03-23T10:32:14.420+00:00\",\n        \"last_login\": \"2023-03-23T10:31:25.154+00:00\",\n        \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRhbGkyQGdtYWlsLmNvbSIsImlhdCI6MTY3OTU2NzUzNCwiZXhwIjoxNjc5NTcxMTM0fQ.MmW9JE-YEEWnEnG4J05SBhOTJ7Fuooe9Le4W9VsBNg2sCN_tVMwTrokOYyxZilYY\",\n        \"isactive\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteByEmail",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/users/delete/email?email=jack.dali2@gmail.com",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"delete",
+						"email"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "jack.dali2@gmail.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteByEmail",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/users/delete/email?email=jack.dali2@gmail.com",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"delete",
+								"email"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "jack.dali2@gmail.com"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Usuario eliminado\",\n    \"data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/users/delete/id?id=93500711-8e81-4041-a4f4-5162cd214524",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"delete",
+						"id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "93500711-8e81-4041-a4f4-5162cd214524"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteById",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/users/delete/id?id=93500711-8e81-4041-a4f4-5162cd214524",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"delete",
+								"id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "93500711-8e81-4041-a4f4-5162cd214524"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Usuario eliminado\",\n    \"data\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/login",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"jack.doli@gmail.com\",\r\n  \"password\": \"suIze&9999,,\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/login",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Sesión iniciada exitosamente\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGkyQGdtYWlsLmNvbSIsImlhdCI6MTY3OTU2ODAyMiwiZXhwIjoxNjc5NTcxNjIyfQ.7TN3kHofuQAz0nM7Xqv0EnSfIFdSiH1DuYb1rcWdF0zp9zl5-E0s4ZlUAoHJmuRd\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"jack.doli2@gmail.com\",\r\n  \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGkyQGdtYWlsLmNvbSIsImlhdCI6MTY3OTU2ODAyMiwiZXhwIjoxNjc5NTcxNjIyfQ.7TN3kHofuQAz0nM7Xqv0EnSfIFdSiH1DuYb1rcWdF0zp9zl5-E0s4ZlUAoHJmuRd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/logout",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"jack.doli2@gmail.com\",\r\n  \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGkyQGdtYWlsLmNvbSIsImlhdCI6MTY3OTU2ODAyMiwiZXhwIjoxNjc5NTcxNjIyfQ.7TN3kHofuQAz0nM7Xqv0EnSfIFdSiH1DuYb1rcWdF0zp9zl5-E0s4ZlUAoHJmuRd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/logout",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Token invalido\",\n    \"data\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "validateToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"jack.doli234@gmail.com\",\r\n  \"token\": \"eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYWNrLmRvbGkyMzRAZ21haWwuY29tIiwiaWF0IjoxNjc5NTY3NTk4LCJleHAiOjE2Nzk1NzExOTh9.rcHYxFGhMNkn1q38ceCfh3Z7x4RZr9nL-XzIl9shJ2C8bhNZOnE4YNjVVPyaLbbT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/users/validate/token",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"users",
+						"validate",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "validateToken",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mensaje\": \"Token valido\",\r\n    \"data\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}/users/validate/token",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"users",
+								"validate",
+								"token"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
