@@ -1,19 +1,19 @@
-package svl.challenge.usersapirestrful.domain;
+package svl.challenge.usersapirestful.domain;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
-import svl.challenge.usersapirestrful.domain.dto.TokenDto;
-import svl.challenge.usersapirestrful.domain.entity.Phones;
-import svl.challenge.usersapirestrful.domain.entity.User;
-import svl.challenge.usersapirestrful.domain.model.RequestLoginModel;
-import svl.challenge.usersapirestrful.domain.model.RequestUserModel;
-import svl.challenge.usersapirestrful.domain.model.RequestUserUpdateModel;
-import svl.challenge.usersapirestrful.domain.model.RequestValidateModel;
-import svl.challenge.usersapirestrful.domain.model.ResponseModel;
-import svl.challenge.usersapirestrful.domain.model.ResponseUserCreationModel;
-import svl.challenge.usersapirestrful.domain.model.ResposeUserModel;
+import svl.challenge.usersapirestful.domain.dto.TokenDto;
+import svl.challenge.usersapirestful.domain.entity.Phones;
+import svl.challenge.usersapirestful.domain.entity.User;
+import svl.challenge.usersapirestful.domain.model.RequestLoginModel;
+import svl.challenge.usersapirestful.domain.model.RequestUserModel;
+import svl.challenge.usersapirestful.domain.model.RequestUserUpdateModel;
+import svl.challenge.usersapirestful.domain.model.RequestValidateModel;
+import svl.challenge.usersapirestful.domain.model.ResponseModel;
+import svl.challenge.usersapirestful.domain.model.ResponseUserCreationModel;
+import svl.challenge.usersapirestful.domain.model.ResposeUserModel;
 
 import java.util.ArrayList;
 

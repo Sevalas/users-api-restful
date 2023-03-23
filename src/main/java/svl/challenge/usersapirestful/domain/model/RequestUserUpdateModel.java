@@ -1,10 +1,10 @@
-package svl.challenge.usersapirestrful.domain.model;
+package svl.challenge.usersapirestful.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import svl.challenge.usersapirestrful.domain.entity.Phones;
+import svl.challenge.usersapirestful.domain.entity.Phones;
 
 import java.util.List;
 

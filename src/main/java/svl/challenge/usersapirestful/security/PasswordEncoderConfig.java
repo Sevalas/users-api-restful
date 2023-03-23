@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.security;
+package svl.challenge.usersapirestful.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

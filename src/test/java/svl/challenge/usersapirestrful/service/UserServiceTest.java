@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.service;
+package svl.challenge.usersapirestful.service;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -8,15 +8,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.util.Assert;
-import svl.challenge.usersapirestrful.domain.entity.User;
-import svl.challenge.usersapirestrful.domain.model.RequestLoginModel;
-import svl.challenge.usersapirestrful.domain.model.RequestUserModel;
-import svl.challenge.usersapirestrful.domain.model.RequestValidateModel;
-import svl.challenge.usersapirestrful.domain.model.ResponseModel;
-import svl.challenge.usersapirestrful.domain.model.ResponseUserCreationModel;
-import svl.challenge.usersapirestrful.domain.model.ResposeUserModel;
-import svl.challenge.usersapirestrful.domain.repository.UserRepository;
-import svl.challenge.usersapirestrful.security.JWTProvider;
+import svl.challenge.usersapirestful.domain.entity.User;
+import svl.challenge.usersapirestful.domain.model.RequestLoginModel;
+import svl.challenge.usersapirestful.domain.model.RequestUserModel;
+import svl.challenge.usersapirestful.domain.model.RequestValidateModel;
+import svl.challenge.usersapirestful.domain.model.ResponseModel;
+import svl.challenge.usersapirestful.domain.model.ResponseUserCreationModel;
+import svl.challenge.usersapirestful.domain.model.ResposeUserModel;
+import svl.challenge.usersapirestful.domain.repository.UserRepository;
+import svl.challenge.usersapirestful.security.JWTProvider;
 
 import java.util.ArrayList;
 import java.util.Arrays;

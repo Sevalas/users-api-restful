@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.domain.dto;
+package svl.challenge.usersapirestful.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class TokenDto {
+public class RequestLoginModel {
 
-    private String token;
+    private String email;
+
+    private String password;
+
 }

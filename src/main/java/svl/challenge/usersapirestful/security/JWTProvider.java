@@ -1,11 +1,11 @@
-package svl.challenge.usersapirestrful.security;
+package svl.challenge.usersapirestful.security;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import svl.challenge.usersapirestrful.domain.entity.User;
+import svl.challenge.usersapirestful.domain.entity.User;
 
 import java.security.Key;
 import java.util.Date;

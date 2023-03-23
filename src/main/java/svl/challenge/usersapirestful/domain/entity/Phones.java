@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.domain.entity;
+package svl.challenge.usersapirestful.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;

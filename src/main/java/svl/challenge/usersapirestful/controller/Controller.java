@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.controller;
+package svl.challenge.usersapirestful.controller;
 
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import svl.challenge.usersapirestrful.domain.model.RequestLoginModel;
-import svl.challenge.usersapirestrful.domain.model.RequestValidateModel;
-import svl.challenge.usersapirestrful.domain.model.RequestUserModel;
-import svl.challenge.usersapirestrful.domain.model.ResponseModel;
-import svl.challenge.usersapirestrful.service.UserService;
+import svl.challenge.usersapirestful.domain.model.RequestLoginModel;
+import svl.challenge.usersapirestful.domain.model.RequestValidateModel;
+import svl.challenge.usersapirestful.domain.model.RequestUserModel;
+import svl.challenge.usersapirestful.domain.model.ResponseModel;
+import svl.challenge.usersapirestful.service.UserService;
 
 @RestController
 @RequestMapping(value = "/users")

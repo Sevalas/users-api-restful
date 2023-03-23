@@ -8,6 +8,6 @@ RUN gradle build --no-daemon
 
 FROM openjdk:17-jdk-slim
 
-COPY --from=build /src/build/libs/*.jar /users-api-restrful.jar
+COPY --from=build /src/build/libs/*.jar /users-api-restful.jar
 
-CMD [ "sh", "-c", "java $JAVA_OPTS -Dserver.port=$PORT -Djava.security.egd=file:/dev/./urandom -jar /users-api-restrful.jar" ]
+CMD [ "sh", "-c", "java $JAVA_OPTS -Dserver.port=$PORT -Djava.security.egd=file:/dev/./urandom -jar /users-api-restful.jar" ]

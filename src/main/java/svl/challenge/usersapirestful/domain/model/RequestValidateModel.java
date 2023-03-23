@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.domain.model;
+package svl.challenge.usersapirestful.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class RequestLoginModel {
+public class RequestValidateModel {
 
     private String email;
 
-    private String password;
+    private String token;
 
 }

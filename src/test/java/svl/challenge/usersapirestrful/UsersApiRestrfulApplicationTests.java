@@ -1,10 +1,10 @@
-package svl.challenge.usersapirestrful;
+package svl.challenge.usersapirestful;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UsersApiRestrfulApplicationTests {
+class UsersApiRestfulApplicationTests {
 
 	@Test
 	void contextLoads() {
@@ -12,7 +12,7 @@ class UsersApiRestrfulApplicationTests {
 
 	@Test
 	public void main() {
-		UsersApiRestrfulApplication.main(new String[] {});
+		UsersApiRestfulApplication.main(new String[] {});
 	}
 
 }

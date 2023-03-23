@@ -1,12 +1,12 @@
-package svl.challenge.usersapirestrful.mapper;
+package svl.challenge.usersapirestful.mapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import svl.challenge.usersapirestrful.domain.model.RequestUserModel;
-import svl.challenge.usersapirestrful.domain.entity.User;
-import svl.challenge.usersapirestrful.domain.model.ResponseUserCreationModel;
-import svl.challenge.usersapirestrful.domain.model.ResposeUserModel;
+import svl.challenge.usersapirestful.domain.model.RequestUserModel;
+import svl.challenge.usersapirestful.domain.entity.User;
+import svl.challenge.usersapirestful.domain.model.ResponseUserCreationModel;
+import svl.challenge.usersapirestful.domain.model.ResposeUserModel;
 
 @Service
 public class UserMapper {

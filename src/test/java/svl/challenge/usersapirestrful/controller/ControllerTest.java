@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.controller;
+package svl.challenge.usersapirestful.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -13,11 +13,11 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import svl.challenge.usersapirestrful.domain.model.RequestLoginModel;
-import svl.challenge.usersapirestrful.domain.model.RequestUserModel;
-import svl.challenge.usersapirestrful.domain.model.RequestValidateModel;
-import svl.challenge.usersapirestrful.domain.model.ResponseModel;
-import svl.challenge.usersapirestrful.service.UserService;
+import svl.challenge.usersapirestful.domain.model.RequestLoginModel;
+import svl.challenge.usersapirestful.domain.model.RequestUserModel;
+import svl.challenge.usersapirestful.domain.model.RequestValidateModel;
+import svl.challenge.usersapirestful.domain.model.ResponseModel;
+import svl.challenge.usersapirestful.service.UserService;
 
 import java.util.ArrayList;
 

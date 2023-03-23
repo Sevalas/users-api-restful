@@ -1,4 +1,4 @@
-package svl.challenge.usersapirestrful.domain.model;
+package svl.challenge.usersapirestful.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,14 +1,14 @@
-package svl.challenge.usersapirestrful;
+package svl.challenge.usersapirestful;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class UsersApiRestrfulApplication extends SpringBootServletInitializer {
+public class UsersApiRestfulApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UsersApiRestrfulApplication.class, args);
+		SpringApplication.run(UsersApiRestfulApplication.class, args);
 	}
 
 }
